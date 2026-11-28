@@ -1,0 +1,16 @@
+v2 verification, 2026-11-23
+
+45 existing numerical/loading/regression tests passed.
+15 new workflow tests passed: candidate-window grids and boundaries, bounded refinement, broad screening, grid budget, period units, Monte Carlo on/off and missing-error choices, approximate-period wizard, clipping/report outputs, conditional recommendation, unsupported-method handling, regular-sampling singularities and interactive menu.
+
+Three synthetic injections on the 413 timestamps of the user-supplied CSV recovered the injected 89-minute, 137-minute and 0.73-day frequencies within 1/T. This is a limited functionality/recovery check, not a calibrated population accuracy study.
+
+The sparse synthetic end-to-end run used three perturbations. The full dense synthetic run used three measurement perturbations, three joint-model simulations and three injections. These counts test functionality, not scientific uncertainty coverage.
+
+See VALIDATION.md for real-data candidates and limits. Monte Carlo does not establish that a candidate is physically correct. Sparse WWZ can legitimately be unavailable.
+
+2026-11-24 v2.1: verified Enter-only input selection and loading of all 413 ASAS-SN rows, flux override with matching errors, missing-error behavior and ambiguous-column handling. Numerical methods are unchanged.
+
+2026-11-25 v2.2: export checks passed for footer refresh, all HTML pages, nonrecursive ZIPs, stage labels, relative asset links and final-run numerical/report contents. Numerical analysis algorithms are unchanged.
+
+2026-11-27 v2.3: 15 workflow tests passed. Temporary-directory cleanup checks verify success-only removal, protected inputs, unknown folders, incomplete runs and newer runs. Scientific algorithms unchanged.
